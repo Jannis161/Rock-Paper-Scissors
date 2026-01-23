@@ -22,12 +22,10 @@ let humanScore = 0;
 let computerScore = 0;
 
 function playRound(humanChoice, computerChoice) {
-    // 1. Zuerst prüfen wir auf Unentschieden (spart viel Tipparbeit!)
     if (humanChoice === computerChoice) {
         return "Tie!";
     }
 
-    // 2. Dann prüfen wir alle Gewinn-Szenarien für den Menschen
     if (
         (humanChoice === "rock" && computerChoice === "scissors") ||
         (humanChoice === "paper" && computerChoice === "rock") ||
@@ -43,3 +41,7 @@ const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
 console.log(playRound(humanSelection, computerSelection));
+
+function playGame () {
+
+}

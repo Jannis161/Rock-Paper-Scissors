@@ -31,8 +31,10 @@ function playRound(humanChoice, computerChoice) {
         (humanChoice === "paper" && computerChoice === "rock") ||
         (humanChoice === "scissors" && computerChoice === "paper")
     ) {
+        humanScore += 1;
         return "Win for the Human!";
     } else {
+        computerScore += 1;
         return "Win for the machine!";
     }
 }
